@@ -8,8 +8,8 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="container mx-auto px-4 py-32">
-          <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl font-bold mb-2">
+          <div className="mx-auto max-w-5xl text-center">
+            <h1 className="text-5xl font-bold mb-2">
               A better way to track your job application
             </h1>
             <p className="text-gray-700 text-xl mb-4">

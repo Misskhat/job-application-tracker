@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "../components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,9 +18,11 @@ export default function Home() {
             </p>
             <div className="flex flex-col gap-4 text-center">
               <div>
-                <Button size={"lg"} className="h-12 px-8 text-lg font-medium">
-                  Start For Free <ArrowRight className="ml-2" />
-                </Button>
+                <Link href={"/sign-up"}>
+                  <Button size={"lg"} className="h-12 px-8 text-lg font-medium">
+                    Start For Free <ArrowRight className="ml-2" />
+                  </Button>
+                </Link>
               </div>
               <p className="text-sm text-gray-700">
                 Free forever. No credit card required.

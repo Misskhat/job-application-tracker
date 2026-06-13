@@ -15,7 +15,7 @@ const NavBar = () => {
           Job Tracker
         </Link>
         <div className="flex items-center gap-4">
-          <Link href={"/sing-in"}>
+          <Link href={"/sign-in"}>
             <Button
               variant={"ghost"}
               className="text-gray-700 hover:text-black"
@@ -23,7 +23,7 @@ const NavBar = () => {
               Login
             </Button>
           </Link>
-          <Link href={"/sing-up"}>
+          <Link href={"/sign-up"}>
             <Button
               variant={"ghost"}
               className="bg-primary hover:bg-primary/90"

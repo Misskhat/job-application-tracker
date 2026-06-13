@@ -73,8 +73,13 @@ const SignUp = () => {
               Sign Up
             </Button>
             <p>
-              Already have an account please{" "}
-              <Link href={"/sign-in"}>Sign In</Link>
+              Already have an account? Please{" "}
+              <Link
+                href={"/sign-in"}
+                className="text-primary hover:text-primary/90 font-semibold"
+              >
+                Sign In
+              </Link>
             </p>
           </CardFooter>
         </form>

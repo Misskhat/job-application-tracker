@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { Button } from "../components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Briefcase, CheckCircle2, TrendingUp } from "lucide-react";
 import Link from "next/link";
+import ImageTabs from "../components/ImageTabs/ImageTabs";
 
 export default function Home() {
   return (
@@ -31,34 +31,47 @@ export default function Home() {
           </div>
         </section>
         {/* Hero Images section with tabs */}
-        <section className="border-t bg-white py-16">
+        <ImageTabs></ImageTabs>
+
+        {/* Features section */}
+        <section className="border-t bg-white py-24">
           <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-6xl">
-              <div className="flex gap-2 justify-center mb-8">
-                {/* Tabs */}
-                <Button>Organized Application</Button>
-                <Button>Get Hired</Button>
-                <Button>Manage Boards</Button>
+            <div className="grid gap-12 md:grid-cols-3">
+              <div className="flex flex-col">
+                <div className="mb-4 inline-flex h-12 w-12 items-center">
+                  <Briefcase className="h-6 w-6 text-primary"></Briefcase>
+                </div>
+                <h3 className="mb-3 text-2xl font-semibold text-black">
+                  Organized Application
+                </h3>
+                <p className="text-gray-700">
+                  Create custom boards and columns to track your job
+                  applications at every stage of the process.
+                </p>
               </div>
-              <div className="relative mx-auto max-w-5xl overflow-hidden rounded-lg border">
-                <Image
-                  src={"/hero-images/hero1.png"}
-                  alt="Organized Application"
-                  width={1220}
-                  height={800}
-                />
-                <Image
-                  src={"/hero-images/hero2.png"}
-                  alt="Organized Application"
-                  width={1220}
-                  height={800}
-                />
-                <Image
-                  src={"/hero-images/hero3.png"}
-                  alt="Organized Application"
-                  width={1220}
-                  height={800}
-                />
+              <div className="flex flex-col">
+                <div className="mb-4 inline-flex h-12 w-12 items-center">
+                  <TrendingUp className="h-6 w-6 text-primary"></TrendingUp>
+                </div>
+                <h3 className="mb-3 text-2xl font-semibold text-black">
+                  Track Progress
+                </h3>
+                <p className="text-gray-700">
+                  Monitor your application status from applied to interview
+                  offer with visual kanban boards.
+                </p>
+              </div>
+              <div className="flex flex-col">
+                <div className="mb-4 inline-flex h-12 w-12 items-center">
+                  <CheckCircle2 className="h-6 w-6 text-primary"></CheckCircle2>
+                </div>
+                <h3 className="mb-3 text-2xl font-semibold text-black">
+                  Stay Organized
+                </h3>
+                <p className="text-gray-700">
+                  Never lose track of an application. Keep all your job search
+                  information in one centralized place.
+                </p>
               </div>
             </div>
           </div>

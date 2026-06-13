@@ -30,6 +30,39 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* Hero Images section with tabs */}
+        <section className="border-t bg-white py-16">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-6xl">
+              <div className="flex gap-2 justify-center mb-8">
+                {/* Tabs */}
+                <Button>Organized Application</Button>
+                <Button>Get Hired</Button>
+                <Button>Manage Boards</Button>
+              </div>
+              <div className="relative mx-auto max-w-5xl overflow-hidden rounded-lg border">
+                <Image
+                  src={"/hero-images/hero1.png"}
+                  alt="Organized Application"
+                  width={1220}
+                  height={800}
+                />
+                <Image
+                  src={"/hero-images/hero2.png"}
+                  alt="Organized Application"
+                  width={1220}
+                  height={800}
+                />
+                <Image
+                  src={"/hero-images/hero3.png"}
+                  alt="Organized Application"
+                  width={1220}
+                  height={800}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );

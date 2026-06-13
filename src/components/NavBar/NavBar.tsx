@@ -26,7 +26,7 @@ const NavBar = () => {
           <Link href={"/sing-up"}>
             <Button
               variant={"ghost"}
-              className="bg-primary hover:bg-primary/90 "
+              className="bg-primary hover:bg-primary/90"
             >
               Start For Free
             </Button>
